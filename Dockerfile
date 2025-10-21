@@ -1,5 +1,5 @@
 # Используем официальный образ Maven с JDK 17
-FROM maven:3.8.6-jdk-17 AS build
+FROM maven:3.4.2-jdk-17 AS build
 COPY . /app
 WORKDIR /app
 # Собираем проект, пропуская тесты (чтобы ускорить сборку)
